@@ -4,7 +4,7 @@ import Marked from "marked";
 export default class Output extends React.Component {
 
   getMarkdownText(input) {
-    var rawMarkup = Marked("some __text__", {sanitize: true});
+    var rawMarkup = Marked(input, {sanitize: true});
     return { __html: rawMarkup };
   }
   
@@ -13,11 +13,12 @@ export default class Output extends React.Component {
 //   }
 
   render() {
+    var newInput = this.props.input;
     return (
         <div>
-            <h1>Output</h1>
-            <p>{this.props.input}</p>
-            <div dangerouslySetInnerHTML={this.getMarkdownText()} />
+            <h1 id="markdown">Output</h1>
+            <p >{this.props.input}</p>
+            <div dangerouslySetInnerHTML={this.getMarkdownText(newInput)} />
         </div>
     )
   }
