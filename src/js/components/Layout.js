@@ -2,6 +2,7 @@ import React from "react";
 import Marked from "marked";
 
 import Input from "./Input";
+import Instructions from "./Instructions";
 import Output from "./Output";
 
 export default class Layout extends React.Component {
@@ -19,9 +20,10 @@ export default class Layout extends React.Component {
   render() {
 
     return (
-        <div>
-          <Input changeInput={this.changeInput.bind(this)} />
-          <Output input={this.state.input} />
+        <div id="main">
+          <Input className="sectiony" changeInput={this.changeInput.bind(this)} />
+          <Output className="sectiony" input={this.state.input} />
+          <Instructions />
         </div>
     )
   }

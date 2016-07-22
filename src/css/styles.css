@@ -1,4 +1,21 @@
+html {
+  background: yellow; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, white, yellow); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, white, yellow); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, white, yellow); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, white, yellow); /* Standard syntax */
+}
+
 #markdown {
     border: 2px solid black;
+}
+
+#main {
+    margin-top: 100px;
+}
+
+.sectiony {
+    /*width: 30%;*/
+    /*float: left;*/
     background-color: red;
 }
