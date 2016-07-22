@@ -11,11 +11,23 @@ html {
 }
 
 #main {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
-.sectiony {
-    /*width: 30%;*/
-    /*float: left;*/
-    background-color: red;
+.box {
+    width: 50%;
+    float: left;
+    height: 500px;
+}
+
+#test {
+    background-color: blueviolet;
+}
+
+#instructions {
+    clear: both;
+}
+
+#title {
+    text-align: center;
 }

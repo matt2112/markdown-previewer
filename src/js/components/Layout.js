@@ -9,7 +9,7 @@ export default class Layout extends React.Component {
   constructor() {
     super();
     this.state = {
-      input: "here is some random text"
+      input: "Type _something_ here."
     };
   }
 
@@ -21,8 +21,9 @@ export default class Layout extends React.Component {
 
     return (
         <div id="main">
-          <Input className="sectiony" changeInput={this.changeInput.bind(this)} />
-          <Output className="sectiony" input={this.state.input} />
+          <h1 id="title">freeCodeCamp Markdown Previewer</h1>
+          <Input changeInput={this.changeInput.bind(this)} />
+          <Output input={this.state.input} />
           <Instructions />
         </div>
     )
