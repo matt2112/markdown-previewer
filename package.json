@@ -24,7 +24,7 @@
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
     "build": "NODE_ENV=production webpack",
-    "sass": "sass src/stylesheets/test.scss src/stylesheets/test.css"
+    "sass": "sass --watch src/stylesheets/"
   },
   "author": "Matthew Lewis",
   "license": "ISC"
