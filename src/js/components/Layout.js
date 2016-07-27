@@ -25,6 +25,7 @@ export default class Layout extends React.Component {
           <Input changeInput={this.changeInput.bind(this)} />
           <Output input={this.state.input} />
           <Instructions />
+          <div id="footer">Coded by <a href="https://www.freecodecamp.com/matt2112" target="blank">Matt Lewis</a></div>
         </div>
     )
   }
