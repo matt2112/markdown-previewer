@@ -75,8 +75,7 @@ textarea {
 
 #footer {
     text-align: center;
-    margin-top: 30px;
-    padding: 5px;
+    padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -108,15 +107,9 @@ textarea {
         margin: 0 auto;
     }
 
-    // Not the best way to do things, but seems to be a weird bug that
-    // prevents use of margins. Also some weird behaviour affecting textarea box.
-    #instructions {
-        position: absolute;
-        top: 680px;
-    }
-
     #footer {
-        position: relative;
-        top: 190px;
+        position: absolute;
+        bottom: 0px;
+        min-width: 100%;
     }
 }

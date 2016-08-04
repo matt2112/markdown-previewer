@@ -68,8 +68,7 @@ textarea {
 
 #footer {
   text-align: center;
-  margin-top: 30px;
-  padding: 5px; }
+  padding: 10px; }
 
 @media screen and (min-width: 768px) {
   .box {
@@ -90,12 +89,9 @@ textarea {
     width: 95%;
     margin: 0 auto; }
 
-  #instructions {
-    position: absolute;
-    top: 680px; }
-
   #footer {
-    position: relative;
-    top: 190px; } }
+    position: absolute;
+    bottom: 0px;
+    min-width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
