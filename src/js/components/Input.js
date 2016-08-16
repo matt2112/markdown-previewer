@@ -10,7 +10,7 @@ export default class Input extends React.Component {
 
   render() {
     return (
-        <div id="input" className="box">
+        <div className="box input">
             <div className="center">
                 <h2 className="header">Input</h2>
                 <textarea onChange={this.handleChange.bind(this)} defaultValue="Type _something_ here."></textarea>

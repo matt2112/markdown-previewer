@@ -24,7 +24,7 @@ export default class Layout extends React.Component {
           <h1 id="title">freeCodeCamp Markdown Previewer</h1>
           <Input changeInput={this.changeInput.bind(this)} />
           <Output input={this.state.input} />
-          <Instructions />
+          <Instructions id="instructions" />
           <div id="footer">Coded by <a href="https://www.freecodecamp.com/matt2112" target="blank">Matt Lewis</a></div>
         </div>
     )

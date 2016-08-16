@@ -10,7 +10,7 @@ export default class Output extends React.Component {
 
   render() {
     return (
-        <div id="output" className="box">
+        <div className="output box">
           <div className="center">
             <h2>Output</h2>
             <div id="markdown" dangerouslySetInnerHTML={this.getMarkdownText(this.props.input)} />
